@@ -18,7 +18,7 @@ bun dev
 
 Set the package.json:
 
-```  
+```
 "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -43,7 +43,7 @@ Set the package.json:
   }
 ```
 
-Set the Next Config File for both local and production deployment 
+Set the Next Config File for both local and production deployment
 
 ```
 const nextConfig = {
@@ -54,6 +54,7 @@ const nextConfig = {
 ```
 
 Second, test the build locally to confirm if the build file is out
+
 - The size get reduced with the output: standalone in the next.config.js file
 
 ```bash
@@ -65,5 +66,4 @@ Second, test the build locally to confirm if the build file is out
 Tested deployment on Azure Static Web App
 
 - Set the build output on Azure Portal to absolute path and out directory
-- Using Github actions CI/CD
-
+- Using Github Actions CI/CD
