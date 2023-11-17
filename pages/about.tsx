@@ -1,20 +1,16 @@
-import Link from "next/link"
+import Nav from "./components/Nav";
 
-import Nav from "./components/Nav"
+import styles from "../styles/Home.module.css";
 
 const About = () => {
+  return (
+    <main className={styles.main}>
+      <Nav />
+      <br />
+      {/* Current Page */}
+      <h3 className={styles.center}>About Page</h3>
+    </main>
+  );
+};
 
-
-    return (
-        <main>
-            <Nav />
-
-            <h3>About Page</h3>    
-            <Link href='/en/test-page-welcome/'>Test Page</Link>
-
-        </main>
-    )
-}
-
-
-export default About
+export default About;

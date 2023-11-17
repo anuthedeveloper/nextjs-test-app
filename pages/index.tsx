@@ -1,11 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '../styles/Home.module.css'
-import Link from 'next/link'
-import Nav from './components/Nav'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "../styles/Home.module.css";
+import Link from "next/link";
+import Nav from "./components/Nav";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -18,7 +18,10 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <Nav />
-
+        <p className={styles.center}>
+          <Link href="/">Home</Link> &nbsp;
+          <code className={styles.code}>current page</code>
+        </p>
         <div className={styles.center}>
           <Image
             className={styles.logo}
@@ -31,10 +34,7 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <Link
-            href="/about"
-            className={styles.card}
-          >
+          <Link href="/about" className={styles.card}>
             <h2>
               About <span>-&gt;</span>
             </h2>
@@ -43,10 +43,7 @@ export default function Home() {
             </p>
           </Link>
 
-          <Link
-            href="/learn"
-            className={styles.card}
-          >
+          <Link href="/learn" className={styles.card}>
             <h2>
               Learn <span>-&gt;</span>
             </h2>
@@ -55,10 +52,7 @@ export default function Home() {
             </p>
           </Link>
 
-          <Link
-            href="/template"
-            className={styles.card}
-          >
+          <Link href="/template" className={styles.card}>
             <h2>
               Templates <span>-&gt;</span>
             </h2>
@@ -67,10 +61,7 @@ export default function Home() {
             </p>
           </Link>
 
-          <Link
-            href="/deploy"
-            className={styles.card}
-          >
+          <Link href="/deploy" className={styles.card}>
             <h2>
               Deploy <span>-&gt;</span>
             </h2>
@@ -82,5 +73,5 @@ export default function Home() {
         </div>
       </main>
     </>
-  )
+  );
 }
