@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import Nav from './components/Nav';
  
 // interface PostProps {
 //   post: any
@@ -12,7 +13,8 @@ function Post( ) {
   const isBlogIndex = slugPage === 'the-goat-files'
   const isArticle = slugPage === 'article'
 
-  return <div>Slug Page: {isBlogIndex ? <div><p>Welcome to {slugPage}</p></div> : <p>Just the {slugPage} Page</p>}</div>
+  return (<div>            <Nav />
+  Slug Page: {isBlogIndex ? <div><p>Welcome to {slugPage}</p></div> : <p>Just the {slugPage} Page</p>}</div>)
 }
  
 // // This function gets called at build time
